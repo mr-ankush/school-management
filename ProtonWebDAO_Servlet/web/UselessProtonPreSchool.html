@@ -1,0 +1,83 @@
+<HTML>
+    <head>
+        <TITLE>Proton Pre School | Indore</TITLE>
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="image/proton_logo.png" />
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript">
+            var documentTitle = document.title + " - ";
+            (function titleMarquee()
+            {
+                document.title = documentTitle = documentTitle.substring(1) + documentTitle.substring(0, 1);
+                setTimeout(titleMarquee, 200);
+            }
+            )();
+        </script>
+        <style>
+            h3,code{font-weight:bold;cursor:pointer;}
+            p:hover{font-weight:bold;}
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="text-center">
+                <img src="image/proton_logo.png" alt="" width="15%" style=" padding:10px;"/>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+        </div>
+        <br>
+        <div class="content">
+            <div class="container">
+                <div class="jumbotron text-center">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a  style="text-decoration:none;" href="InsertData">
+                                <h3><code>Insert Data</code></h3>
+                                <p>Click to open</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a style="text-decoration:none;" href="UpdateById.html">
+                                <h3><code>Update Data</code></h3>
+                                <p>Click to open</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a style="text-decoration:none;" href="DeleteById.html">
+                                <h3><code>Delete Data</code></h3>
+                                <p>Click to open</p>
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a style="text-decoration:none;" href="SearchAllStudentA">
+                                <h3><code>Search All Data</code></h3>
+                                <p>Click to open</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a style="text-decoration:none;" href="SearchById.html">
+                                <h3><code>Search By Id</code></h3>
+                                <p>Click to open</p>
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a style="text-decoration:none;" href="SearchAllDeletedA">
+                                <h3><code>Search All Deleted Data</code></h3>
+                                <p>Click to open</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a  class="text-center" style="text-decoration:none;cursor:pointer;" href="index.html"><h4>Refresh Page</h4></a>
+        </div>
+    </body>
+</HTML>

@@ -1,0 +1,31 @@
+/* Style all input fields */
+input, textarea
+{
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    color:midnightblue;
+    text-transform: capitalize;
+}
+
+/* Style the submit button */
+input[type=submit] 
+{
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Style the container for inputs */
+.container 
+{
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-bottom:15px;
+}
+
+
+///////////////////

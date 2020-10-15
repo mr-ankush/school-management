@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" href="image/proton_logo.png" />
+        <title>Log-In | Proton Pre School</title>
+        <script type="text/javascript">
+        var documentTitle = document.title + " - ";
+	(function titleMarquee() 
+	{
+            document.title = documentTitle = documentTitle.substring(1) + documentTitle.substring(0,1);
+            setTimeout(titleMarquee,200);
+	}
+	)();
+        </script>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/sign-in.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+    </head>
+    <body class="text-center">
+        <form class="form-signin" method="POST" action="CheckLogin">
+            <img class="mb-4" src="image/proton_logo.png" alt="" width="175" height="85">
+            <h1 class="h3 mb-3 font-weight-normal display-5">Please Log-in...</h1>
+            <hr>
+            <label for="Email" style="float:left;font-family:arial;">Username:</label>
+            <input type="text" id="Username" class="form-control" name="txtUsername" placeholder="Username" required autofocus autocomplete="off">
+            <br>
+            <label for="inputPassword" style="float:left;font-family:arial;">Password:</label>
+            <input type="password" id="Password" class="form-control" name="txtPassword" placeholder="Password" required autofocus autocomplete="off">
+            <hr>
+            <input class="btn btn-lg btn-primary btn-block" style="font-family:arial black;" type="submit" value="Log In" autofocus>
+            <input class="btn btn-lg btn-info btn-block" style="font-family:arial black;" type="reset" value="Reset" autofocus>
+            <hr>
+            <p class="mt-5 mb-3 text-muted float-none">Proton Pre School <sup> &COPY; </sup> 2019-2020</p>
+        </form>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

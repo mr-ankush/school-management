@@ -1,0 +1,74 @@
+<HTML>
+  <head>
+    <TITLE>Delete Data | Proton Pre School</TITLE>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/proton_logo.png" />
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        var documentTitle = document.title + " - ";
+	(function titleMarquee() 
+	{
+            document.title = documentTitle = documentTitle.substring(1) + documentTitle.substring(0,1);
+            setTimeout(titleMarquee,200);
+	}
+	)();
+    </script>
+
+    <style>
+        code{font-weight:bold;}
+    </style>
+  </head>
+    <body>
+        <div class="header">
+            <div style="padding:5px;">
+            <a href="SignOut.jsp"><b>Log-out!</b></a>
+            </div>
+            <div class="text-center">
+                <img src="image/proton_logo.png" alt="" width="15%" style=" padding:10px;"/>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+        </div>
+        <div class="content">
+        <div class="container">
+            <div class="text-center">
+                <div class="col-sm-2">
+                    <CODE><A href="ProtonPreSchool">Go to Index Page</A></CODE>
+                </div>
+                <div class="col-sm-2">
+                    <CODE><A href="InsertData">Insert Data</A></CODE>
+                </div>
+                <div class="col-sm-2">
+                    <CODE><A href="UpdateById.html">Update Data</A></CODE>
+                </div>
+                <div class="col-sm-2">
+                    <CODE><A href="SearchById.html">Searching Data</A></CODE>
+                </div>
+                <div class="col-sm-2">
+                    <CODE><A href="SearchAllStudentA">View Data</A></CODE>
+                </div>
+                <div class="col-sm-2">
+                    <CODE><A href="SearchAllDeletedA">View Deleted Data</A></CODE>
+                </div>
+            </div>
+            <h2 class="text-center" style="cursor:pointer;"><u><b>Delete Data By ID - Student</b></u></h2>
+            <div class="col-sm-12 text-center">
+                <hr style="color:blue;">
+            </div>
+            <form method="POST" action="DeleteById">
+                <label for="id">Student ID:</label>
+                <input type="text" name="txtId" placeholder="Enter Student Id" autofocus required autocomplete="off"/>            
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+            <center>
+                <CODE><A href="ProtonPreSchool">Go to index page</A></CODE>
+            </center>
+        </div>
+        </div>
+    </body>
+</HTML>
